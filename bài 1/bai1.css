@@ -16,16 +16,12 @@ table tr th{
     font-weight: 100;
 }
 
-table tr td {
-    /* width: 10px; */
-}
-
-table tr:nth-child(odd){
-    background-color: #c9c4c4;
-}
-
-table tr:nth-child(1){
+thead tr{
     background-color: gray;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #c9c4c4;
 }
 
 table tr th{
@@ -35,4 +31,21 @@ table tr th{
 
 .textcolorblue{
     color: blue;
+}
+
+.coltwo{
+    padding-left: 20px;
+}
+
+.colthree{
+    padding-left: 20px;
+    color: blue;
+}
+
+.colfour{
+    padding-left: 20px;
+}
+
+table tbody tr:hover{
+    background-color: #bcbff6bd;
 }
