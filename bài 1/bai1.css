@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+table{
+    border-collapse: collapse;
+    border: black solid 1px;
+    width: 600px;
+}
+table tr{
+    height: 30px;
+}
+
+table tr th{
+    font-weight: 100;
+}
+
+table tr td {
+    /* width: 10px; */
+}
+
+table tr:nth-child(odd){
+    background-color: #c9c4c4;
+}
+
+table tr:nth-child(1){
+    background-color: gray;
+}
+
+table tr th{
+    border-left: black solid 0.5px;
+    border-bottom: black solid 0.5px;
+}
+
+.textcolorblue{
+    color: blue;
+}
