@@ -48,3 +48,42 @@
 .menu .submenu div:hover{
     background-color: #047baa;
 }
+
+.menuup{
+    background-color: #047baa;
+    margin: 30px auto auto 35%;
+    width: 450px;
+    height: 50px;
+    background-color: #047baa;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.menuup button{
+    background-color: #047baa;
+    color: white;
+    height: 100%;
+    border: black solid 1px;
+    width: 150px;
+    float: left;
+}
+
+.buttonLeft{
+
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.buttonright{
+    right: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.menuup button:hover{
+    background-color: red;
+}
+
