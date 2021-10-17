@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.content{
+    width: 500px;
+    height: 135px;
+    background-image: url(./NAPC-C1-so-luoc-ve-nhiep-anh-phong-canh-scaled.jpg)
+}
+
+.content p::first-letter{
+    font-size: 4rem;
+    float: left;
+    line-height: 1;
+}
+

@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+button{
+    width: 104px;
+    height: 44px;
+    font-size: 20px;
+    margin: 50px;
+    box-shadow: 5px 5px #9b9b9b;
+    border-radius: 10px;
+}
+
+button:active{
+    box-shadow: none;
+}

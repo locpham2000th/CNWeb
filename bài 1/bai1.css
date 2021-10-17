@@ -29,8 +29,8 @@ table tr th{
     border-bottom: black solid 0.5px;
 }
 
-.textcolorblue{
-    color: blue;
+.textcolorrgba(0, 140, 255, 0.7){
+    color: rgba(0, 140, 255, 0.7);
 }
 
 .coltwo{
@@ -39,7 +39,7 @@ table tr th{
 
 .colthree{
     padding-left: 20px;
-    color: blue;
+    color: rgba(0, 140, 255, 0.7);
 }
 
 .colfour{
