@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trò chơi bài</title>
+    <link rel="stylesheet" href="labai.css">
+</head>
+<body>
+
+    <div class="content" >
+        <div class="row">
+            <span class="bai la1" name="quanat" onclick="forElementOne(`la1`,`la3`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="at.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la2" name="quan2" onclick="forElementOne(`la2`,`la5`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quân 2.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la3" name="quanat" onclick="forElementOne(`la3`,`la1`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="at.png" alt="at" style="display: none;"></span>
+            <span class="bai la4" name="quan7" onclick="forElementOne(`la4`,`la11`)" >
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 7.png" alt="at" style="display: none;"></span>
+            </span>
+        </div>
+        <div class="row">
+            <span class="bai la5" name="quan2" onclick="forElementOne(`la5`,`la2`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quân 2.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la6" name="quan5" onclick="forElementOne(`la6`,`la10`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 5.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la7" name="quan8" onclick="forElementOne(`la7`,`la14`)" >
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 8.png" alt="at" style="display: none;"></span>
+            </span>
+            <span class="bai la8" name="quan3" onclick="forElementOne(`la8`,`la13`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 3.png" alt="at" style="display: none;"></span>
+            </span>
+        </div>
+        <div class="row">
+            <span class="bai la9" name="quan4" onclick="forElementOne(`la9`,`la15`)" >
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 4.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la10" name="quan5" onclick="forElementOne(`la10`,`la6`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 5.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la11" name="quan7" onclick="forElementOne(`la11`,`la4`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 7.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la12" name="quan6" onclick="forElementOne(`la16`,`la12`)" >
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 6.png" alt="at" style="display: none;">
+            </span>
+        </div>
+        <div class="row">
+            <span class="bai la13" name="quan3" onclick="forElementOne(`la13`,`la8`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 3.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la14" name="quan8" onclick="forElementOne(`la14`,`la7`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 8.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la15" name="quan4" onclick="forElementOne(`la15`,`la9`)" >
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 4.png" alt="at" style="display: none;">
+            </span>
+            <span class="bai la16" name="quan6" onclick="forElementOne(`la16`,`la12`)">
+                <img src="matsau.png" alt="matsau" width="130px" height="200px">
+                <img src="quan 6.png" alt="at" style="display: none;">
+            </span>
+        </div>
+    </div>
+    
+    <script>
+        var cntclick = 0;
+        var cnt = 0;
+        var present = "";
+        var nameevent = "";
+        var nameclass = "";
+        var cntclick = 0;
+        var dich = 0;
+        function forElementOne(nametarget, nametarget1){
+            cntclick++;
+            if(cnt == 0){
+                cnt++;
+                present = document.getElementsByClassName(nametarget).item(0).getAttribute("name");
+                document.getElementsByClassName(nametarget).item(0).children[0].setAttribute("style", "display : none");
+                document.getElementsByClassName(nametarget).item(0).children[1].setAttribute("style", "display : inline")
+                document.getElementsByClassName(nametarget).item(0).removeAttribute("onclick");
+                nameevent = "forElementOne(`"+nametarget+"`,`"+nametarget1+"`)";
+                nameclass = nametarget;
+            }else if(cnt == 1){
+                let sosanh = document.getElementsByClassName(nametarget).item(0).getAttribute("name");
+                console.log(sosanh)
+                console.log(present)
+                if(sosanh == present){
+
+                    cnt = 0;
+                        document.getElementsByClassName(nametarget).item(0).children[0].setAttribute("style", "display : none");
+                        document.getElementsByClassName(nametarget).item(0).children[1].setAttribute("style", "display : inline");
+                    setTimeout(() => {
+                        document.getElementsByClassName(nametarget)[0].setAttribute("style", "visibility: hidden;");
+                        document.getElementsByClassName(nametarget1)[0].setAttribute("style", "visibility: hidden;");
+                    }, 1000);
+                    dich++;
+                    if(dich == 8){
+                        alert("bạn đã chiến thắng với " + cntclick + " bước");
+                    }
+                }else{
+                    cnt = 0;
+                    present = "";
+                    document.getElementsByClassName(nameclass).item(0).setAttribute("onclick",nameevent);
+                    document.getElementsByClassName(nametarget).item(0).children[0].setAttribute("style", "display : none");
+                    document.getElementsByClassName(nametarget).item(0).children[1].setAttribute("style", "display : inline");
+                    setTimeout(() => {
+                        document.getElementsByClassName(nametarget).item(0).children[0].setAttribute("style", "display : inline");
+                        document.getElementsByClassName(nametarget).item(0).children[1].setAttribute("style", "display : none");
+                        document.getElementsByClassName(nameclass).item(0).children[0].setAttribute("style", "display : inline");
+                        document.getElementsByClassName(nameclass).item(0).children[1].setAttribute("style", "display : none");
+                    }, 1000);
+
+                    console.log("dax nhan sk nay")
+                }
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>

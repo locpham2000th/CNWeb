@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+#dongho{
+    /* background-image: url(matdongho.jpg); */
+    /* background-repeat: no-repeat; */
+    width: 200px;
+    height: 100px;
+}
+
+
+
+#tam{
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 444px;
+    top: 343px;
+}

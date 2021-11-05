@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.content{
+    position: relative;
+}
+
+.bai{
+    /* position: absolute; */
+    width: 100px;
+    height: 100px;
+}
+
+
+
